@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+</head>
+<body>
+	
+	<div class ="container">
+	<form method="POST">
+	{{form.as_p}}
+	{% csrf_token%}
+	<input type ="SUBMIT"  class="btn btn-primary" value="submit">
+	<a href="{% url 'app:show' %}">click here to showdatabase!</a>
+	<a href="{% static 'abc.jpg'%"}></a>
+	</form>	
+   </div>
+   <div class ="container">
+		{% block body_block %}
+		{% endblock%}
+	</div>	
+</body>
+</html>

@@ -1,0 +1,17 @@
+{%load staticfiles %}
+<html>
+<head>
+	<title>Registration</title>
+</head>
+<body>
+	<div class ="container">
+	<form method="POST">
+	{{form.as_p}}
+	{% csrf_token%}
+	<input type ="SUBMIT"  class="btn btn-primary" value="submit">
+	<li><a href= "{% url 'app:show' %}">click here to showdatabase!</a></li>
+	<img src="{% static 'img.jpg'%}">
+	</form>	
+   </div>
+</body>
+</html>

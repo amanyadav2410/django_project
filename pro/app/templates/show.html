@@ -1,0 +1,25 @@
+
+<html>
+<head>
+</head>
+<body>
+{%if obj %}
+<table border="1">
+	<tr>
+		<th>name</th>
+		<th>mobile</th>
+		<th>email</th>
+	</tr>
+	<tr>
+	{%for abc in obj%}
+	<td>{{abc.name}}</td>
+	<td>{{abc.mobile}}</td>
+	<td>{{abc.email}}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% else %}
+<p>no data found</p>
+{% endif %}
+</body>
+</html>
